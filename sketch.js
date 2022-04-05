@@ -13,14 +13,14 @@ function draw() {
   let locX = mouseX - height / 1;
   let locY = mouseY - width / 1;
 
-  ambientLight(10);
+  ambientLight(6);
   directionalLight(250, 0.15, 0.15, 0.15, 0.15, 0.15);
   pointLight(0, 4, 250, locX, locY, 250);
 
   push();
   translate(-width / 29, 0, 0);
-  rotateZ(frameCount * 0.02);
-  rotateX(frameCount * 0.02);
+  rotateZ(frameCount * 0.01);
+  rotateX(frameCount * 0.01);
   specularMaterial(255);
   box(180, 180, 180);
   pop();

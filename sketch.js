@@ -13,7 +13,7 @@ function draw() {
   let locX = mouseX - height / 1;
   let locY = mouseY - width / 1;
 
-  ambientLight(6);
+  ambientLight(10);
   directionalLight(250, 0.15, 0.15, 0.15, 0.15, 0.15);
   pointLight(0, 4, 250, locX, locY, 250);
 
